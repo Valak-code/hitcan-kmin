@@ -1,0 +1,64 @@
+.button-dev:hover {
+  -webkit-box-shadow: 1px 8px 11px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 8px 11px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card-height-dev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.banner-dev {
+  position: relative;
+}
+
+.banner-dev-image {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.banner-dev-search {
+  position: absolute;
+  z-index: 2;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.card-height-dev {
+  min-height: 250px;
+}
+
+.card-height-dev.card-content-dev {
+  height: 100% !important;
+}
+
+.card-title-dev {
+  min-height: 100px;
+  text-align: center;
+  font-size: 37px !important;
+}
+
+.button-dev {
+  background: -webkit-gradient(linear, left top, right top, from(#B055FA), to(#556EFA));
+  background: linear-gradient(to right, #B055FA, #556EFA);
+  transition: 0.3s !important;
+  -webkit-transition: 0.3s !important;
+  -moz-transition: 0.3s !important;
+  -ms-transition: 0.3s !important;
+  -o-transition: 0.3s !important;
+}
+
+.button-dev:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#c48bf1), color-stop(#b055fa), color-stop(#b055fa), to(#c48bf1));
+  background: linear-gradient(to right, #c48bf1, #b055fa, #b055fa, #c48bf1);
+}
+/*# sourceMappingURL=index.css.map */

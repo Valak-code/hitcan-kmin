@@ -1,0 +1,30 @@
+.btn-challenge:hover {
+  -webkit-box-shadow: 1px 8px 11px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 8px 11px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 8px 11px 0px rgba(0, 0, 0, 0.75);
+}
+
+.btn-challenge {
+  background: linear-gradient(to right, #ff9aff, #a9a0ff);
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.filter {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 64px;
+}
+
+.mobile-filter-dev {
+  position: fixed;
+  top: 80%;
+  right: 20px;
+}
+
+/*# sourceMappingURL=challenge.css.map */
