@@ -26,14 +26,63 @@
     />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/challenge.css" />
+    <link rel="stylesheet" href="css/login.css" />
     <link rel="stylesheet" href="css/init.css" />
   </head>
   <!-- code này được viết bới Khanh đẹp trai, Tốt xấu trai và lên kế hoạch bởi Vũ Đình Bảo -->
   <!-- this code was coding by Khanh handsome, Tot ugly and planned by Vu Dinh Bao -->
   <body class="background-body">
+    <!-- login with facebook -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId: "1335335326641302",
+          cookie: true,
+          xfbml: true,
+          version: "v5.0"
+        });
+
+        FB.AppEvents.logPageView();
+      };
+
+      (function(d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+          return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+
     <div class="loader-wrapper">
       <span class="loader"><span class="loader-inner"></span></span>
     </div>
+
+    <div class="row m-0">
+      <div class="col l12 m12 s12 background-login p-0">
+        <div class="opac"></div>
+        <div class="logo-login circle overflow-hidden">
+          <img src="img/logo_kmin.png" class="w-100" alt="kmin" />
+        </div>
+        <div class="row container login-form card white">
+          <div class="col l12 s12 m12 card-content">
+            <div class="input-field">
+              <input id="email" type="email" class="validate" />
+              <label for="email">Email</label>
+            </div>
+            <div class="input-field">
+              <input id="password" type="password" class="validate" />
+              <label for="password">Password</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer class="page-footer black">
       <div class="footer-copyright">
         <div class="container center">

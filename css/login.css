@@ -1,0 +1,53 @@
+.background-login .login-form, .background-login .logo-login img {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.background-login {
+  background-image: url("../img/Software-Engineering-2.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.background-login .opac {
+  position: relative;
+  background: #b899ff;
+  opacity: 0.6;
+  width: 100vw;
+  height: 100%;
+  z-index: 1;
+}
+.background-login .logo-login {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  z-index: 2;
+  top: 5%;
+  left: 50%;
+  background-color: #fff;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.background-login .logo-login img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.background-login .login-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+}
+
+/*# sourceMappingURL=login.css.map */

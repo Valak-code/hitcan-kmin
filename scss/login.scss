@@ -1,0 +1,67 @@
+$first-color: #ff82bc;
+$second-color: #ff9aff;
+$third-color: #cd97ff;
+$fourth-color: #b899ff;
+$fiveth-color: #a9a0ff;
+$sixth-color: #9dd3ff;
+$seventh-color: #6ed2da;
+$eighth-color: #89e2db;
+
+
+%left-top {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.background-login {
+    background-image: url("../img/Software-Engineering-2.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .opac {
+        position: relative;
+        background: $fourth-color;
+        opacity: 0.6;
+        width: 100vw;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .logo-login {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        z-index: 2;
+        top: 5%;
+        left: 50%;
+        background-color: #fff;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+
+        & img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            @extend %left-top;
+        }
+    }
+
+    .login-form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @extend %left-top;
+        z-index: 10;
+    }
+}
