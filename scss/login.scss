@@ -25,3 +25,19 @@ $eighth-color: #89e2db;
   background-size: cover;
   position: relative;
 }
+
+.text-line-center {
+  position: relative;
+  &-title {
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    background-color: #fff;
+    padding: 0 20px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+}
