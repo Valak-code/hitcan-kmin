@@ -12,6 +12,7 @@
     <meta name="description" content="Find Solution for Problems" />
     <!-- I love cat! Meow Meow #Nguyen Phi Khanh -->
     <title>Hit Challenge | Các thử thách</title>
+    <base href="{{asset('')}}">
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -162,54 +163,31 @@
       <div class="col l8 m8 s12">
         <div class="row">
           <div class="col l8 m12 s12">
-            <div class="card">
+            @php
+            foreach($lst_bai_tap as $bai_tap){
+            @endphp
+              <div class="card">
               <div class="card-content w-50">
                 <h4 class="card-title grey-text text-darken-4">
-                  Say hello word!
+                  {{$bai_tap->ten_bai_tap}}
                 </h4>
-                <p class="cyan-text darken-4">Dễ</p>
-              </div>
-              <a
-                class="btn btn-large waves-effect waves-light btn-challenge"
-                href="detail.html"
-                >hit challenge</a
-              >
-            </div>
+                @switch($bai_tap->do_kho)
+                @case('Dễ')
+                <p class="cyan-text darken-4">{{$bai_tap->do_kho}}</p>
+                @break
 
-            <div class="card">
-              <div class="card-content w-50">
-                <h4 class="card-title grey-text text-darken-4">
-                  Say hello word!
-                </h4>
-                <p class="red-text darken-4">Cực Khó</p>
-              </div>
-              <a
-                class="btn btn-large waves-effect waves-light btn-challenge"
-                href="detail.html"
-                >hit challenge</a
-              >
-            </div>
+                @case('Bình thường')
+                <p class="green-text darken-4">{{$bai_tap->do_kho}}</p>
+                @break
 
-            <div class="card">
-              <div class="card-content w-50">
-                <h4 class="card-title grey-text text-darken-4">
-                  Say hello word!
-                </h4>
-                <p class="cyan-text darken-4">Dễ</p>
-              </div>
-              <a
-                class="btn btn-large waves-effect waves-light btn-challenge"
-                href="detail.html"
-                >hit challenge</a
-              >
-            </div>
+                @case('Khó')
+                <p class="orange-text darken-4">{{$bai_tap->do_kho}}</p>
+                @break
 
-            <div class="card">
-              <div class="card-content w-50">
-                <h4 class="card-title grey-text text-darken-4">
-                  Say hello word!
-                </h4>
-                <p class="green-text darken-4">Bình Thường</p>
+                @default
+                <p class="red-text darken-4">{{$bai_tap->do_kho}}</p>
+                @endswitch
+                
               </div>
               <a
                 class="btn btn-large waves-effect waves-light btn-challenge"
@@ -217,34 +195,10 @@
                 >hit challenge</a
               >
             </div>
-
-            <div class="card">
-              <div class="card-content w-50">
-                <h4 class="card-title grey-text text-darken-4">
-                  Tìm số nguyên tố lớn nhất trong mảng
-                </h4>
-                <p class="orange-text darken-4">Khó</p>
-              </div>
-              <a
-                class="btn btn-large waves-effect waves-light btn-challenge"
-                href="detail.html"
-                >hit challenge</a
-              >
-            </div>
-
-            <div class="card">
-              <div class="card-content w-50">
-                <h4 class="card-title grey-text text-darken-4">
-                  Say hello word!
-                </h4>
-                <p class="orange-text darken-4">Khó</p>
-              </div>
-              <a
-                class="btn btn-large waves-effect waves-light btn-challenge"
-                href="detail.html"
-                >hit challenge</a
-              >
-            </div>
+            @php
+            }
+            @endphp
+            
             <ul class="pagination right">
               <li class="disabled">
                 <a href="#!"><i class="material-icons">chevron_left</i></a>

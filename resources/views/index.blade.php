@@ -12,6 +12,7 @@
     <meta name="description" content="Find Solution for Problems" />
     <!-- I love cat! Meow Meow #Nguyen Phi Khanh -->
     <title>Hit Challenge</title>
+    <base href="{{asset('')}}">
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -164,134 +165,29 @@
 
       <div class="col m8 s12 p-5">
         <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="card card-height-dev valign-wrapper z-depth-5">
-              <div class="card-content h-100 w-100 center">
-                <h3 class="card-title card-title-dev">Khởi động</h3>
-                <a
-                  href="challenge.html"
-                  class="btn waves-effect waves-light btn-large button-dev"
-                >
-                  Xem thử thách
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col l4 m6 s12">
-            <div class="card card-height-dev valign-wrapper z-depth-5">
-              <div class="card-content h-100 w-100 center">
-                <h3 class="card-title card-title-dev">Mảng</h3>
-                <a
-                  href="challenge.html"
-                  class="btn waves-effect waves-light btn-large button-dev"
-                >
-                  Xem thử thách
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col l4 m6 s12">
-            <div class="card card-height-dev valign-wrapper z-depth-5">
-              <div class="card-content h-100 w-100 center">
-                <h3 class="card-title card-title-dev">Sắp xếp</h3>
-                <a
-                  href="challenge.html"
-                  class="btn waves-effect waves-light btn-large button-dev"
-                >
-                  Xem thử thách
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col l4 m6 s12">
-            <div class="card card-height-dev valign-wrapper z-depth-5">
-              <div class="card-content h-100 w-100 center">
-                <h3 class="card-title card-title-dev">Thao tác chuổi</h3>
-                <a
-                  href="challenge.html"
-                  class="btn waves-effect waves-light btn-large button-dev"
-                >
-                  Xem thử thách
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col l4 m6 s12">
-            <div class="card card-height-dev valign-wrapper z-depth-5">
-              <div class="card-content h-100 w-100 center">
-                <h3 class="card-title card-title-dev">Tham lam</h3>
-                <a
-                  href="challenge.html"
-                  class="btn waves-effect waves-light btn-large button-dev"
-                >
-                  Xem thử thách
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col l4 m6 s12">
-            <div class="card card-height-dev valign-wrapper z-depth-5">
-              <div class="card-content h-100 w-100 center">
-                <h3 class="card-title card-title-dev">Khởi động</h3>
-                <a
-                  href="challenge.html"
-                  class="btn waves-effect waves-light btn-large button-dev"
-                >
-                  Xem thử thách
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col l4 m6 s12">
-            <div class="card card-height-dev valign-wrapper z-depth-5">
-              <div class="card-content h-100 w-100 center">
-                <h3 class="card-title card-title-dev">Khởi động</h3>
-                <a
-                  href="challenge.html"
-                  class="btn waves-effect waves-light btn-large button-dev"
-                >
-                  Xem thử thách
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col l4 m6 s12">
-            <div class="card card-height-dev valign-wrapper z-depth-5">
-              <div class="card-content h-100 w-100 center">
-                <h3 class="card-title card-title-dev">Khởi động</h3>
-                <a
-                  href="challenge.html"
-                  class="btn waves-effect waves-light btn-large button-dev"
-                >
-                  Xem thử thách
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col l4 m6 s12">
-            <div class="card card-height-dev valign-wrapper z-depth-5">
-              <div class="card-content h-100 w-100 center">
-                <h3 class="card-title card-title-dev">Khởi động</h3>
-                <a
-                  href="challenge.html"
-                  class="btn waves-effect waves-light btn-large button-dev"
-                >
-                  Xem thử thách
-                </a>
-              </div>
-            </div>
-          </div>
+          @php
+          foreach($lst_chu_de as $chu_de){
+            @endphp
+                <div class="col l4 m6 s12">
+                  <div class="card card-height-dev valign-wrapper z-depth-5">
+                    <div class="card-content h-100 w-100 center">
+                      <h3 class="card-title card-title-dev">{{$chu_de->ten_chu_de}}</h3>
+                      <a
+                        href="chu_de/{{$chu_de->id}}"
+                        class="btn waves-effect waves-light btn-large button-dev"
+                      >
+                        Xem thử thách
+                      </a>
+                    </div>
+                  </div>
+                </div>
+            @php
+            }
+          @endphp
         </div>
       </div>
 
+      
       <div class="col s2 hide-on-small-only opacity">
         <img src="img/course-goal.png" class="w-100" alt="kmin" />
       </div>
