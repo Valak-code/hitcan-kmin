@@ -42,7 +42,10 @@
           version: "v5.0"
         });
 
-        FB.AppEvents.logPageView();
+        FB.getLoginStatus(function(response) {
+          statusChangeCallback(response);
+          console.log(response);
+        });
       };
 
       (function(d, s, id) {
@@ -56,6 +59,20 @@
         js.src = "https://connect.facebook.net/en_US/sdk.js";
         fjs.parentNode.insertBefore(js, fjs);
       })(document, "script", "facebook-jssdk");
+
+      function statusChangeCallback(response) {
+        if (response.status === "connected") {
+          console.log("logged in and authenticated");
+        } else {
+          console.log("logged not authenticated");
+        }
+      }
+
+      function checkLoginState() {
+        FB.getLoginStatus(function(response) {
+          statusChangeCallback(response);
+        });
+      }
     </script>
 
     <div class="loader-wrapper">
@@ -106,12 +123,13 @@
                     <p class="grey-text text-line-center-title">Hoặc</p>
                   </div>
                   <div class="col s6 m6 l6">
-                    <button
-                      class="btn btn-floating btn-large waves-effect waves-light mt-1 indigo darken-2 hoverable"
+                    <fb:login-button
                       id="facebook-login"
+                      scope="public_profile,email"
+                      onlogin="checkLoginState();"
                     >
                       <i class="fab fa-facebook-f"></i>
-                    </button>
+                    </fb:login-button>
                   </div>
                   <div class="col 6 m6 l6">
                     <button
