@@ -66,6 +66,7 @@ $(document).ready(function() {
     }
   });
 
+  // em sẽ nhận được 1 file json như này;
   const value = {
     exercises: [
       {
@@ -127,6 +128,7 @@ $(document).ready(function() {
     ]
   };
 
+  //sau đó render ra thành html
   const renderExercises = () => {
     let exercisesObj = value.exercises,
       x;
