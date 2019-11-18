@@ -1,3 +1,4 @@
+// TODO hàm render ra những bài tập dễ
 const renderExercisesEasy = exercisesObj => {
   let x;
   for (x in exercisesObj) {
@@ -19,6 +20,7 @@ const renderExercisesEasy = exercisesObj => {
   }
 };
 
+// TODO hàm render ra những bài tập bình thường
 const renderExercisesNormal = exercisesObj => {
   let x;
   for (x in exercisesObj) {
@@ -40,6 +42,7 @@ const renderExercisesNormal = exercisesObj => {
   }
 };
 
+// TODO hàm render ra những bài tập Khó
 const renderExercisesHard = exercisesObj => {
   let x;
   for (x in exercisesObj) {
@@ -61,6 +64,7 @@ const renderExercisesHard = exercisesObj => {
   }
 };
 
+// TODO hàm render ra những bài tập cực khó
 const renderExercisesExtreme = exercisesObj => {
   let x;
   for (x in exercisesObj) {
@@ -82,6 +86,7 @@ const renderExercisesExtreme = exercisesObj => {
   }
 };
 
+// TODO hàm render ra full bài tập
 const renderExercisesAll = exercisesObj => {
   let x;
   for (x in exercisesObj) {
@@ -147,6 +152,7 @@ const renderExercisesAll = exercisesObj => {
 
 $(document).ready(() => {
   // gọi API em sẽ nhận được 1 file json như này;
+  // TODO cái này là json bài tập mà em nhận được khi gọi tới API của anh
   const value = {
     exercises: [
       {
