@@ -1,3 +1,0 @@
-lần 1:
-1/ phần popup video hướng dẫn, trang detail.html
-2/ phần navbar full trang
