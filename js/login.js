@@ -1,3 +1,3 @@
 $(document).ready(function() {
-  $("#facebook-login").on("click", () => {});
+  $(".tabs").tabs();
 });
