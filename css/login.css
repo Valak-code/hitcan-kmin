@@ -23,4 +23,9 @@
   -o-transform: translateX(-50%);
 }
 
+.abcRioButton {
+  width: 50% !important;
+  margin: auto;
+}
+
 /*# sourceMappingURL=login.css.map */

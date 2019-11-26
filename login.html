@@ -10,6 +10,12 @@
       content="find solution for problems, hitcan, hit challenge, kmin hitcan, kmin, Kmin, kmin.edu.vn, Cao Thang, Cao Thắng, code, lập trình, bài tập lập trình"
     />
     <meta name="description" content="Find Solution for Problems" />
+    <meta name="google-signin-scope" content="profile email" />
+    <meta
+      name="google-signin-client_id"
+      content="208538085728-pi87rac5kqrm6djhsekek48e8vhhhl2l.apps.googleusercontent.com"
+    />
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <!-- I love cat! Meow Meow #Nguyen Phi Khanh -->
     <title>Hit Challenge | Đăng Nhập</title>
     <link
@@ -32,49 +38,6 @@
   <!-- code này được viết bới Khanh đẹp trai, Tốt xấu trai và lên kế hoạch bởi Vũ Đình Bảo -->
   <!-- this code was coding by Khanh handsome, Tot ugly and planned by Vu Dinh Bao -->
   <body class="background-body">
-    <!-- login with facebook -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId: "415702496037959",
-          cookie: true,
-          xfbml: true,
-          version: "v5.0"
-        });
-
-        FB.getLoginStatus(function(response) {
-          statusChangeCallback(response);
-          console.log(response);
-        });
-      };
-
-      (function(d, s, id) {
-        var js,
-          fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {
-          return;
-        }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      })(document, "script", "facebook-jssdk");
-
-      function statusChangeCallback(response) {
-        if (response.status === "connected") {
-          console.log("logged in and authenticated");
-        } else {
-          console.log("logged not authenticated");
-        }
-      }
-
-      function checkLoginState() {
-        FB.getLoginStatus(function(response) {
-          statusChangeCallback(response);
-        });
-      }
-    </script>
-
     <div class="loader-wrapper">
       <span class="loader"><span class="loader-inner"></span></span>
     </div>
@@ -99,7 +62,12 @@
               <div class="col s12"></div>
               <div class="col s2 m4 l4"></div>
               <div class="col s8 m4 l4">
-                <img id="email-pass" src="img/email.png" class="w-100" alt="" />
+                <img
+                  id="email-pass"
+                  src="img/normal.png"
+                  class="w-100"
+                  alt=""
+                />
               </div>
               <div class="col s2 m4 l4"></div>
             </div>
@@ -157,6 +125,37 @@
                 <p class="grey-text text-line-center-title">Hoặc</p>
               </div>
               <div class="col s3"></div>
+              <div class="col s12"></div>
+              <div class="col s12 m3 l3"></div>
+              <div class="col s12 m6 l6 mt-5">
+                <div class="row">
+                  <div class="col s12">
+                    <div id="fb-root"></div>
+                    <script
+                      async
+                      defer
+                      crossorigin="anonymous"
+                      src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v5.0&appId=415702496037959&autoLogAppEvents=1"
+                    ></script>
+                    <div
+                      class="fb-login-button"
+                      data-width=""
+                      data-size="medium"
+                      data-button-type="login_with"
+                      data-auto-logout-link="false"
+                      data-use-continue-as="false"
+                    ></div>
+                  </div>
+                  <div class="col s12 mt-3">
+                    <div
+                      id="my-signin2"
+                      class="g-signin2"
+                      data-onsuccess="onSignIn"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m3 l3"></div>
             </div>
           </div>
         </div>
@@ -189,5 +188,10 @@
     <script src="js/navbar.js"></script>
     <script src="js/loadingpage.js"></script>
     <script src="js/login.js"></script>
+    <script
+      src="https://apis.google.com/js/platform.js?onload=renderButton"
+      async
+      defer
+    ></script>
   </body>
 </html>
