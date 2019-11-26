@@ -6,39 +6,6 @@ $(document).ready(function() {
     $("#email-pass").attr("src", "img/pass.jpg");
   });
 
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId: "415702496037959",
-      cookie: true,
-      xfbml: true,
-      status: true,
-      version: "v5.0",
-      oauth: true
-    });
-
-    FB.AppEvents.logPageView();
-  };
-
-  (function(d, s, id) {
-    var js,
-      fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) {
-      return;
-    }
-    js = d.createElement(s);
-    js.id = id;
-    js.src = "https://connect.facebook.net/en_US/sdk.js";
-    fjs.parentNode.insertBefore(js, fjs);
-  })(document, "script", "facebook-jssdk");
-
-  $("#facebook-login").on("click", () => {
-    FB.api("/me", function(response) {
-      if (response && !response.error) {
-        console.log(response);
-      }
-    });
-  });
-
   //login by google
   function onSignIn(googleUser) {
     var profile = googleUser.getBasicProfile();
