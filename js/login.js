@@ -1,3 +1,8 @@
 $(document).ready(function() {
-  $(".tabs").tabs();
+  $("#email").on("keyup change", () => {
+    $("#email-pass").attr("src", "img/email.png");
+  });
+  $("#password").on("keyup change", () => {
+    $("#email-pass").attr("src", "img/pass.jpg");
+  });
 });
