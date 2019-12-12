@@ -8,7 +8,7 @@ $(document).ready(function() {
 
   //login by google
   function onSignIn(googleUser) {
-    var profile = googleUser.getBasicProfile();
+    let profile = googleUser.getBasicProfile();
     console.log("ID: " + profile.getId()); // Don't send this directly to your server!
     console.log("Full Name: " + profile.getName());
     console.log("Given Name: " + profile.getGivenName());
@@ -16,7 +16,7 @@ $(document).ready(function() {
     console.log("Image URL: " + profile.getImageUrl());
     console.log("Email: " + profile.getEmail());
 
-    var id_token = googleUser.getAuthResponse().id_token;
+    let id_token = googleUser.getAuthResponse().id_token;
     console.log("ID Token: " + id_token);
   }
   function onSuccess(googleUser) {
