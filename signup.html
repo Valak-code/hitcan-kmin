@@ -103,7 +103,136 @@
       <div id="test1" class="col s12">
         <div class="card">
           <div class="card-content center-align">
-            <h1>khanh dep trai</h1>
+            <div class="row">
+              <div class="col s12 m4 l4"></div>
+              <div class="col s12 m4 l4">
+                <a href="index.html">
+                  <img
+                    src="img/logo_kmin.png"
+                    class="responsive-img w-100 mt-3"
+                    alt="kmin"
+                  />
+                </a>
+              </div>
+              <div class="col s12 m4 l4"></div>
+            </div>
+            <div class="row">
+              <div class="col l3 m12 s12"></div>
+              <div class="col m12 l6 s12">
+                <div class="row">
+                  <form class="col s12">
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="name" type="text" class="validate" />
+                        <label for="name">First & Last Name</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix">email</i>
+                        <input id="email" type="email" class="validate" />
+                        <label for="email">Email</label>
+                        <span
+                          class="helper-text"
+                          data-error="wrong"
+                          data-succes="right"
+                        ></span>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix">lock</i>
+                        <input id="password" type="password" class="invalid" />
+                        <label for="password">Your Password</label>
+                        <span
+                          class="helper-text"
+                          data-error="weak password"
+                        ></span>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix">lock_open</i>
+                        <input
+                          id="confirm-password"
+                          type="password"
+                          class="validate"
+                        />
+                        <label for="confirm-password">Confirm Password</label>
+                        <span
+                          class="helper-text"
+                          data-error="incorrect password"
+                        ></span>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix">accessibility</i>
+                        <input id="key-premium" type="text" class="validate" />
+                        <label for="key-premium">Key Premium</label>
+                        <span class="helper-text" data-succes="alo"
+                          >có thể bỏ qua mục này</span
+                        >
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col l3 m12 s12"></div>
+              <div class="col s12"></div>
+              <div class="col l6 s12 m12"></div>
+              <div class="col s6 m6 l3 mt-3">
+                <a
+                  href="#!"
+                  class="right waves-effect waves-light btn hoverable"
+                  >Đăng Ký</a
+                >
+              </div>
+              <div class="col l3 s12 m12"></div>
+              <div class="col s12"></div>
+              <div class="col l3 m12 s12"></div>
+              <div class="col m12 l6 s12 center mt-3 text-line-center">
+                <hr class="grey-text" />
+                <p class="grey-text text-line-center-title">
+                  Hoặc
+                </p>
+              </div>
+              <div class="col s3"></div>
+              <div class="col s12"></div>
+              <div class="col s12 m3 l3"></div>
+              <div class="col s12 m6 l6 mt-5">
+                <div class="row">
+                  <div class="col s12">
+                    <div id="fb-root"></div>
+                    <script
+                      async
+                      defer
+                      crossorigin="anonymous"
+                      src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v5.0&appId=415702496037959&autoLogAppEvents=1"
+                    ></script>
+                    <div
+                      class="fb-login-button"
+                      data-width=""
+                      data-size="medium"
+                      data-button-type="login_with"
+                      data-auto-logout-link="false"
+                      data-use-continue-as="false"
+                      scope="public_profile,email"
+                      onlogin="checkLoginState()"
+                    ></div>
+                  </div>
+                  <div class="col s12 mt-3">
+                    <div
+                      id="my-signin2"
+                      class="g-signin2"
+                      data-onsuccess="onSignIn"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m3 l3"></div>
+            </div>
           </div>
         </div>
       </div>
