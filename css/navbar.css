@@ -1,24 +1,14 @@
-#home a, #info a, #registration a, #showroom a, #write a, #book a, #even a {
-  display: -webkit-box;
-  display: -ms-flexbox;
+#even a, #book a, #write a, #showroom a, #registration a, #info a, #home a {
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .logo-dev {
   max-height: 63.9px;
   padding: 10px !important;
 }
-
 .logo-dev .logo-navbar-dev {
   max-height: 45px;
 }
@@ -31,130 +21,103 @@
   -o-transition: 0.3s;
   max-height: 63.9px;
 }
-
 #home i {
   font-size: 20px;
   max-height: 20px;
 }
-
 #home:hover {
-  background: #ff82bc !important;
+  background: #fdc018 !important;
 }
-
 #home:hover a {
   color: white !important;
 }
 
 #info a {
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   max-height: 63.9px;
 }
-
 #info i {
   font-size: 20px;
   max-height: 20px;
 }
-
 #info:hover {
-  background: #ff9aff !important;
+  background: #fdc018 !important;
 }
-
 #info:hover a {
   color: white !important;
 }
 
 #registration a {
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   max-height: 63.9px;
 }
-
 #registration i {
   font-size: 20px;
   max-height: 20px;
 }
-
 #registration:hover {
-  background: #cd97ff !important;
+  background: #fdc018 !important;
 }
-
 #registration:hover a {
   color: white !important;
 }
 
 #showroom a {
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   max-height: 63.9px;
 }
-
 #showroom i {
   font-size: 20px;
   max-height: 20px;
 }
-
 #showroom:hover {
-  background: #b899ff !important;
+  background: #fdc018 !important;
 }
-
 #showroom:hover a {
   color: white !important;
 }
 
 #write a {
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   max-height: 63.9px;
 }
-
 #write i {
   font-size: 20px;
   max-height: 20px;
 }
-
 #write:hover {
-  background: #a9a0ff !important;
+  background: #fdc018 !important;
 }
-
 #write:hover a {
   color: white !important;
 }
 
 #book a {
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   max-height: 63.9px;
 }
-
 #book i {
   font-size: 20px;
   max-height: 20px;
 }
-
 #book:hover {
-  background: #9dd3ff !important;
+  background: #fdc018 !important;
 }
-
 #book:hover a {
   color: white !important;
 }
 
 #even a {
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   max-height: 63.9px;
 }
-
 #even i {
   font-size: 20px;
   max-height: 20px;
 }
-
 #even:hover {
-  background: #6ed2da !important;
+  background: #fdc018 !important;
 }
-
 #even:hover a {
   color: white !important;
 }
@@ -167,4 +130,5 @@
   -ms-transition: 0.3s !important;
   -o-transition: 0.3s !important;
 }
+
 /*# sourceMappingURL=navbar.css.map */
