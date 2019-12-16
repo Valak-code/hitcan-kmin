@@ -1,5 +1,6 @@
 $(document).ready(function() {
   $(".sidenav").sidenav();
+  $(".collapsible").collapsible();
 
   let prevScrollpos = $(window).scrollTop();
   $(window).scroll(() => {
@@ -11,6 +12,7 @@ $(document).ready(function() {
     }
     prevScrollpos = currentScrollPos;
   });
+
   console.log(
     "%cPhi Khanh đẹp trai thanh lịch vô địch vũ trụ",
     "color: #1AB374; font-weight: bold; font-size: 3rem; text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);"

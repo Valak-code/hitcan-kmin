@@ -45,6 +45,7 @@ $primary-color: #fdc018;
 
     a {
       color: white !important;
+      background-color: transparent !important;
     }
   }
 }
@@ -66,6 +67,7 @@ $primary-color: #fdc018;
 
     a {
       color: white !important;
+      background-color: transparent !important;
     }
   }
 }
@@ -87,7 +89,22 @@ $primary-color: #fdc018;
 
     a {
       color: white !important;
+      background-color: transparent !important;
     }
+  }
+
+  &:hover .drop-hover a {
+    color: black;
+  }
+}
+
+
+.dropdown-content li:hover,
+.dropdown-content li.active {
+  background-color: $primary-color !important;
+
+  a {
+    color: #000 !important;
   }
 }
 
@@ -108,6 +125,7 @@ $primary-color: #fdc018;
 
     a {
       color: white !important;
+      background-color: transparent !important;
     }
   }
 }
@@ -129,6 +147,7 @@ $primary-color: #fdc018;
 
     a {
       color: white !important;
+      background-color: transparent !important;
     }
   }
 }
@@ -150,6 +169,7 @@ $primary-color: #fdc018;
 
     a {
       color: white !important;
+      background-color: transparent !important;
     }
   }
 }
@@ -171,6 +191,7 @@ $primary-color: #fdc018;
 
     a {
       color: white !important;
+      background-color: transparent !important;
     }
   }
 }
@@ -182,4 +203,20 @@ $primary-color: #fdc018;
   -moz-transition: 0.3s !important;
   -ms-transition: 0.3s !important;
   -o-transition: 0.3s !important;
+}
+
+.dropdown-top-nav {
+  min-width: 250px !important;
+
+  a {
+    color: #000 !important;
+  }
+}
+
+.collapse-dev {
+  padding: 0 32px !important;
+
+  i {
+    font-size: 14px;
+  }
 }

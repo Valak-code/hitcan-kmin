@@ -51,6 +51,7 @@ $eighth-color: #89e2db;
 .card-height-dev {
     min-height: 250px;
     @extend %between-height;
+
     &.card-content-dev {
         height: 100% !important;
     }
@@ -63,10 +64,10 @@ $eighth-color: #89e2db;
 }
 
 .button-dev {
-    background: linear-gradient(to right, #B055FA, #556EFA);
+    background: linear-gradient(to right, rgb(253, 192, 24), rgb(255, 211, 92));
 
     &:hover {
-        background: linear-gradient(to right, #c48bf1, #b055fa, #b055fa, #c48bf1);
+        background: linear-gradient(to right, rgb(255, 221, 129), rgb(253, 192, 24), rgb(253, 192, 24), rgb(255, 223, 137));
         @extend %box-shadow-btn;
     }
 

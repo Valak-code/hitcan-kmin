@@ -27,10 +27,10 @@ $eighth-color: #89e2db;
 }
 
 .btn-detail-challenge {
-    background: linear-gradient(to right, $sixth-color, $second-color);
+    background: linear-gradient(to right, rgb(253, 192, 24), rgb(255, 211, 92));
 
     &:hover {
-        background: linear-gradient(to right, $second-color, $first-color, $second-color);
+        background: linear-gradient(to right, rgb(255, 221, 129), rgb(253, 192, 24), rgb(253, 192, 24), rgb(255, 223, 137));
         @extend %box-shadow-btn;
     }
 
@@ -47,8 +47,9 @@ $eighth-color: #89e2db;
 }
 
 .video-popup {
-    width: 90%;
-    min-height: 80vh;
+    width: 95%;
+    min-height: 90vh;
+    top: 5% !important;
 }
 
 .sticky {

@@ -3,4 +3,5 @@ $(window).on("load", function() {
   $("body").removeClass("overflow-hidden");
   $(".parallax").parallax();
   $(".modal").modal();
+  $(".dropdown-trigger").dropdown();
 });

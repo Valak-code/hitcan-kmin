@@ -11,7 +11,7 @@ const renderExercisesEasy = exercisesObj => {
         <p class="cyan-text darken-4">${exercisesObj[x].level}</p>
       </div>
       <a
-        class="btn btn-large waves-effect waves-light btn-challenge"
+        class="btn btn-large waves-effect waves-light btn-challenge black-text"
         href="${exercisesObj[x].url}"
         >hit challenge</a
       >
@@ -33,7 +33,7 @@ const renderExercisesNormal = exercisesObj => {
         <p class="green-text darken-4">${exercisesObj[x].level}</p>
       </div>
       <a
-        class="btn btn-large waves-effect waves-light btn-challenge"
+        class="btn btn-large waves-effect waves-light btn-challenge black-text"
         href="${exercisesObj[x].url}"
         >hit challenge</a
       >
@@ -55,7 +55,7 @@ const renderExercisesHard = exercisesObj => {
         <p class="orange-text darken-4">${exercisesObj[x].level}</p>
       </div>
       <a
-        class="btn btn-large waves-effect waves-light btn-challenge"
+        class="btn btn-large waves-effect waves-light btn-challenge black-text"
         href="${exercisesObj[x].url}"
         >hit challenge</a
       >
@@ -77,7 +77,7 @@ const renderExercisesExtreme = exercisesObj => {
         <p class="red-text darken-4">${exercisesObj[x].level}</p>
       </div>
       <a
-        class="btn btn-large waves-effect waves-light btn-challenge"
+        class="btn btn-large waves-effect waves-light btn-challenge black-text"
         href="${exercisesObj[x].url}"
         >hit challenge</a
       >
@@ -99,7 +99,7 @@ const renderExercisesAll = exercisesObj => {
         <p class="cyan-text darken-4">${exercisesObj[x].level}</p>
       </div>
       <a
-        class="btn btn-large waves-effect waves-light btn-challenge"
+        class="btn btn-large waves-effect waves-light btn-challenge black-text"
         href="${exercisesObj[x].url}"
         >hit challenge</a
       >
@@ -113,7 +113,7 @@ const renderExercisesAll = exercisesObj => {
         <p class="green-text darken-4">${exercisesObj[x].level}</p>
       </div>
       <a
-        class="btn btn-large waves-effect waves-light btn-challenge"
+        class="btn btn-large waves-effect waves-light btn-challenge black-text"
         href="${exercisesObj[x].url}"
         >hit challenge</a
       >
@@ -127,7 +127,7 @@ const renderExercisesAll = exercisesObj => {
         <p class="orange-text darken-4">${exercisesObj[x].level}</p>
       </div>
       <a
-        class="btn btn-large waves-effect waves-light btn-challenge"
+        class="btn btn-large waves-effect waves-light btn-challenge black-text"
         href="${exercisesObj[x].url}"
         >hit challenge</a
       >
@@ -141,7 +141,7 @@ const renderExercisesAll = exercisesObj => {
         <p class="red-text darken-4">${exercisesObj[x].level}</p>
       </div>
       <a
-        class="btn btn-large waves-effect waves-light btn-challenge"
+        class="btn btn-large waves-effect waves-light btn-challenge black-text"
         href="${exercisesObj[x].url}"
         >hit challenge</a
       >

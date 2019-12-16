@@ -6,6 +6,7 @@ $fiveth-color: #a9a0ff;
 $sixth-color: #9dd3ff;
 $seventh-color: #6ed2da;
 $eighth-color: #89e2db;
+$primary-color: #fdc018;
 
 %center-display {
   display: flex;
@@ -38,14 +39,12 @@ body {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0.44, rgb(188, 53, 230)),
-    color-stop(0.72, rgb(197, 34, 189)),
-    color-stop(0.86, rgb(241, 97, 241))
-  );
+  background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      color-stop(0.44, rgb(255, 211, 14)),
+      color-stop(0.72, rgb(255, 239, 11)),
+      color-stop(0.86, rgb(255, 214, 29)));
 }
 
 .opacity {
@@ -86,6 +85,10 @@ body {
 
 .text-color-eigh-dev {
   color: $eighth-color !important;
+}
+
+.text-color-primary {
+  color: $primary-color !important;
 }
 
 .p-0 {

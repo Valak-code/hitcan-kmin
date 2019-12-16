@@ -6,6 +6,7 @@ $fiveth-color: #a9a0ff;
 $sixth-color: #9dd3ff;
 $seventh-color: #6ed2da;
 $eighth-color: #89e2db;
+$primary-color: #fdc018;
 
 %box-shadow-btn {
     -webkit-box-shadow: 1px 8px 11px 0px rgba(0, 0, 0, 0.75);
@@ -14,7 +15,7 @@ $eighth-color: #89e2db;
 }
 
 .btn-challenge {
-    background: linear-gradient(to right, $second-color, $fiveth-color);
+    background: linear-gradient(to right, $primary-color, rgb(253, 255, 150));
     position: absolute;
     top: 50%;
     right: 3%;

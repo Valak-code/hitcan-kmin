@@ -20,7 +20,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, #bc35e6), color-stop(0.72, #c522bd), color-stop(0.86, #f161f1));
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, #ffd30e), color-stop(0.72, #ffef0b), color-stop(0.86, #ffd61d));
 }
 
 .opacity {
@@ -61,6 +61,10 @@ body {
 
 .text-color-eigh-dev {
   color: #89e2db !important;
+}
+
+.text-color-primary {
+  color: #fdc018 !important;
 }
 
 .p-0 {
