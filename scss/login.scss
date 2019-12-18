@@ -6,6 +6,7 @@ $fiveth-color: #a9a0ff;
 $sixth-color: #9dd3ff;
 $seventh-color: #6ed2da;
 $eighth-color: #89e2db;
+$primary-color: #fdc018;
 
 %left-top {
   top: 50%;
@@ -29,6 +30,7 @@ $eighth-color: #89e2db;
 
 .text-line-center {
   position: relative;
+
   &-title {
     position: absolute;
     top: -5px;
@@ -46,4 +48,10 @@ $eighth-color: #89e2db;
 .abcRioButton {
   width: 50% !important;
   margin: auto;
+}
+
+.medium {
+  &::after {
+    color: $primary-color !important;
+  }
 }

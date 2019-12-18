@@ -7,8 +7,8 @@ $(document).ready(function() {
     items: 1,
     nav: true,
     navText: [
-      '<button class="btn btn-small waves-effect waves-light purple accent-2 m-3"><i class="material-icons">chevron_left</i></button>',
-      '<button class="btn btn-small waves-effect waves-light purple accent-2 m-3"><i class="material-icons">chevron_right</i></button>'
+      '<button class="btn btn-small waves-effect waves-light yellow darken-1 m-3 black-text"><i class="material-icons">chevron_left</i></button>',
+      '<button class="btn btn-small waves-effect waves-light yellow darken-1 m-3 black-text"><i class="material-icons">chevron_right</i></button>'
     ],
     dots: false
   });

@@ -29,4 +29,8 @@
   margin: auto;
 }
 
+.medium::after {
+  color: #fdc018 !important;
+}
+
 /*# sourceMappingURL=login.css.map */

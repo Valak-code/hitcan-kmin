@@ -91,10 +91,12 @@ $primary-color: #fdc018;
       color: white !important;
       background-color: transparent !important;
     }
-  }
 
-  &:hover .drop-hover a {
-    color: black;
+    .drop-hover {
+      a {
+        color: #000 !important;
+      }
+    }
   }
 }
 
@@ -219,4 +221,13 @@ $primary-color: #fdc018;
   i {
     font-size: 14px;
   }
+}
+
+.icon-account {
+  text-align: left !important;
+  margin-right: 30px !important;
+}
+
+.collapsible-login {
+  margin-left: 20px !important;
 }

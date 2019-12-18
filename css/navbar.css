@@ -65,7 +65,7 @@
   background-color: transparent !important;
 }
 #registration:hover .drop-hover a {
-  color: black;
+  color: #000 !important;
 }
 
 .dropdown-content li:hover,
@@ -162,6 +162,15 @@
 }
 .collapse-dev i {
   font-size: 14px;
+}
+
+.icon-account {
+  text-align: left !important;
+  margin-right: 30px !important;
+}
+
+.collapsible-login {
+  margin-left: 20px !important;
 }
 
 /*# sourceMappingURL=navbar.css.map */
