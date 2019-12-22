@@ -2,9 +2,15 @@ $(document).ready(() => {
   let mediumRegex = new RegExp("((?=.*[a-z])(?=.*[0-9])(?=.{6,}))");
   let strongPassword = new RegExp("((?=.*[a-z])(?=.*[0-9])(?=.{8,}))");
 
-  let flag, continue_value, inputPass;
+  let flag,
+    continue_value = false,
+    inputPass;
 
   $("#password").on("input", () => {
+    if (continue_value === true) {
+      continue_value = false;
+      removeConfirmPass();
+    }
     inputPass = $("#password").val();
     if (strongPassword.exec(inputPass)) {
       $("#password").addClass("valid");
@@ -26,17 +32,20 @@ $(document).ready(() => {
   });
 
   $("#confirm-password").on("input", () => {
-    let confirmPass;
+    let confirmPass = $("#confirm-password").val();
     if (flag == true && confirmPass == inputPass) {
-      console.log("alo");
       $("#confirm-password").removeClass("invalid");
       $("#confirm-password").addClass("valid");
       continue_value = true;
     } else {
-      console.log("not match");
       $("#confirm-password").addClass("invalid");
       $("#confirm-password").removeClass("validate");
       continue_value = false;
     }
   });
+
+  const removeConfirmPass = () => {
+    $("#confirm-password").addClass("invalid");
+    $("#confirm-password").removeClass("validate");
+  };
 });
