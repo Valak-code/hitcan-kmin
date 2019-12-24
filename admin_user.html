@@ -54,12 +54,64 @@
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/init.css" />
+    <link rel="stylesheet" href="css/admin.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
   </head>
   <body class="background-body">
     <div class="loader-wrapper">
       <span class="loader"><span class="loader-inner"></span></span>
     </div>
+
+    <ul id="nav-mobile" class="sidenav sidenav-fixed">
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img src="img/office.jpg" class="w-100" />
+          </div>
+          <a href="#user"
+            ><img
+              class="circle"
+              src="https://scontent.fsgn5-3.fna.fbcdn.net/v/t1.0-9/56301848_2120591188009589_3755928198609633280_n.jpg?_nc_cat=111&_nc_oc=AQmqrrbKoBAhxFjD7ZyE2HnaAIMDYdD_KoG7aQT5kENrsgkw7CozMXKAj3vihIbK1Wk&_nc_ht=scontent.fsgn5-3.fna&oh=3abab05cf334bb64de062920c32e738b&oe=5E5C471B"
+          /></a>
+          <a href="#name"><span class="white-text name">Vũ Đình Bảo</span></a>
+          <a href="#email"
+            ><span class="white-text email">vubao.edu@gmail.com</span></a
+          >
+        </div>
+      </li>
+      <li class="active">
+        <a href="#!"><i class="material-icons">person</i>Quản lý user</a>
+      </li>
+      <li><div class="divider"></div></li>
+      <li>
+        <a href="#!"
+          ><i class="material-icons">library_books</i>Quản lý bài tập</a
+        >
+      </li>
+      <li><div class="divider"></div></li>
+    </ul>
+    <main class="admin-main">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col s12">
+            <div class="card blue-grey darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">Card Title</span>
+                <p>
+                  I am a very simple card. I am good at containing small bits of
+                  information. I am convenient because I require little markup
+                  to use effectively.
+                </p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+                <a href="#">This is a link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -69,5 +121,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/loadingpage.js"></script>
+    <script src="js/admin.js"></script>
   </body>
 </html>
