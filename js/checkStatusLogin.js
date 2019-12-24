@@ -1,4 +1,5 @@
 $(document).ready(() => {
+  $(".modal").modal();
   let mediumRegex = new RegExp("((?=.*[a-z])(?=.*[0-9])(?=.{6,}))");
   let strongPassword = new RegExp("((?=.*[a-z])(?=.*[0-9])(?=.{8,}))");
 
@@ -48,4 +49,15 @@ $(document).ready(() => {
     $("#confirm-password").addClass("invalid");
     $("#confirm-password").removeClass("validate");
   };
+
+  $("#submit-form").on("click", () => {
+    console.log("alo");
+    if (
+      $("#name").val() !== "" &&
+      $("#email").val() !== "" &&
+      continue_value === true
+    ) {
+      $("#confirm-signup").modal("open");
+    }
+  });
 });

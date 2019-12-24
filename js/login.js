@@ -36,4 +36,16 @@ $(document).ready(function() {
     });
   }
   renderButton();
+
+  $("#forget-password-button").on("click", () => {
+    $("#get-email-tab").css("display", "block");
+    $("#get-id-code").css("display", "none");
+  });
+
+  $("#get-email").on("click", () => {
+    if ($("#email-forget-pass").hasClass("valid")) {
+      $("#get-email-tab").css("display", "none");
+      $("#get-id-code").css("display", "block");
+    }
+  });
 });
